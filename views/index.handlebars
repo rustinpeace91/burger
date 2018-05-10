@@ -1,13 +1,44 @@
 <h1>Eat Da Burger!</h1>
 
-<h2>Burgers Not Eated</h2>
+<div id = "burger-container">
+  <div class = "burger block">
+  <h2>Burgers Not Eated</h2>
 
+      <ul>
+    {{#each burgers}}
+      {{#unless devoured}}
+          <li>{{burger_name}}<button> Devour it</button></li>
+      {{/unless}}
+    {{/each}}
 
-  {{#each burgers}}
+      </ul>
+  </div>
+  <div class = "burger-block">
+    <h2>Burgers Eated</h2>
     <ul>
-        <li>{{id}}</li>
-        <li>{{burger_name}}</li>
-        <li>{{devoured}}</li>
+    {{#each burgers}}
+      {{#if devoured}}
+          <li>{{burger_name}} has been eaten</li>
+      {{/if}}
+    {{/each}}
     </ul>
-  {{/each}}
+    </div>
 
+</div>
+
+<h2>Add a Burger</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="burgeradd">burger name:</label>
+    <input type="text" id="ca" name="name">
+  </div>
+
+  <div class="form-group">
+    <label for="isdev">Sleepy?</label><br>
+    <input type="radio" name="sleepy" value="1" checked> devoured<br>
+    <input type="radio" name="sleepy" value="0"> not devoured
+  </div>
+
+  <button type="submit">Add Burger</button>
+</form>
