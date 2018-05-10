@@ -2,8 +2,12 @@
 
 <h2>Burgers Not Eated</h2>
 
-<ul>
+
   {{#each burgers}}
-    <li>{{burger_name}}</li>
+    <ul>
+        <li>{{id}}</li>
+        <li>{{burger_name}}</li>
+        <li>{{devoured}}</li>
+    </ul>
   {{/each}}
-</ul>
+
