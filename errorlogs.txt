@@ -1,0 +1,117 @@
+2018-05-11T18:15:26.158524+00:00 app[api]: Initial release by user isaaclubanko@gmail.com
+2018-05-11T18:15:26.158524+00:00 app[api]: Release v1 created by user isaaclubanko@gmail.com
+2018-05-11T18:15:26.265330+00:00 app[api]: Release v2 created by user isaaclubanko@gmail.com
+2018-05-11T18:15:26.265330+00:00 app[api]: Enable Logplex by user isaaclubanko@gmail.com
+2018-05-11T18:18:01.986579+00:00 app[api]: Release v3 created by user isaaclubanko@gmail.com
+2018-05-11T18:18:01.986579+00:00 app[api]: Attach JAWSDB (@ref:jawsdb-opaque-42810) by user isaaclubanko@gmail.com
+2018-05-11T18:18:12.031092+00:00 app[api]: Release v4 created by user jawsdb@addons.heroku.com
+2018-05-11T18:18:12.031092+00:00 app[api]: Update JAWSDB by jawsdb by user jawsdb@addons.heroku.com
+2018-05-11T18:23:44.000000+00:00 app[api]: Build started by user isaaclubanko@gmail.com
+2018-05-11T18:23:55.131509+00:00 app[api]: Deploy 41a25fed by user isaaclubanko@gmail.com
+2018-05-11T18:23:55.131509+00:00 app[api]: Release v5 created by user isaaclubanko@gmail.com
+2018-05-11T18:23:55.145423+00:00 app[api]: Scaled to web@1:Free by user isaaclubanko@gmail.com
+2018-05-11T18:23:44.000000+00:00 app[api]: Build succeeded
+2018-05-11T18:23:58.090079+00:00 heroku[web.1]: Starting process with command `npm start`
+2018-05-11T18:24:01.379670+00:00 app[web.1]: 
+2018-05-11T18:24:01.379688+00:00 app[web.1]: > burger@1.0.0 start /app
+2018-05-11T18:24:01.379689+00:00 app[web.1]: > node server.js
+2018-05-11T18:24:01.379691+00:00 app[web.1]: 
+2018-05-11T18:24:02.340419+00:00 app[web.1]: /app/config/connection.js:11
+2018-05-11T18:24:02.340449+00:00 app[web.1]:   connection.mysql.createConnection(process.env.JAWSDB_URL);
+2018-05-11T18:24:02.340452+00:00 app[web.1]:              ^
+2018-05-11T18:24:02.340453+00:00 app[web.1]: 
+2018-05-11T18:24:02.340455+00:00 app[web.1]: TypeError: Cannot read property 'mysql' of undefined
+2018-05-11T18:24:02.340456+00:00 app[web.1]:     at Object.<anonymous> (/app/config/connection.js:11:14)
+2018-05-11T18:24:02.340458+00:00 app[web.1]:     at Module._compile (module.js:652:30)
+2018-05-11T18:24:02.340460+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:663:10)
+2018-05-11T18:24:02.340461+00:00 app[web.1]:     at Module.load (module.js:565:32)
+2018-05-11T18:24:02.340462+00:00 app[web.1]:     at tryModuleLoad (module.js:505:12)
+2018-05-11T18:24:02.340464+00:00 app[web.1]:     at Function.Module._load (module.js:497:3)
+2018-05-11T18:24:02.340466+00:00 app[web.1]:     at Module.require (module.js:596:17)
+2018-05-11T18:24:02.340467+00:00 app[web.1]:     at require (internal/module.js:11:18)
+2018-05-11T18:24:02.340469+00:00 app[web.1]:     at Object.<anonymous> (/app/config/orm.js:1:80)
+2018-05-11T18:24:02.340470+00:00 app[web.1]:     at Module._compile (module.js:652:30)
+2018-05-11T18:24:02.354888+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2018-05-11T18:24:02.355431+00:00 app[web.1]: npm ERR! errno 1
+2018-05-11T18:24:02.357314+00:00 app[web.1]: npm ERR! burger@1.0.0 start: `node server.js`
+2018-05-11T18:24:02.357562+00:00 app[web.1]: npm ERR! Exit status 1
+2018-05-11T18:24:02.357899+00:00 app[web.1]: npm ERR! 
+2018-05-11T18:24:02.358186+00:00 app[web.1]: npm ERR! Failed at the burger@1.0.0 start script.
+2018-05-11T18:24:02.358446+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2018-05-11T18:24:02.366569+00:00 app[web.1]: 
+2018-05-11T18:24:02.366908+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2018-05-11T18:24:02.367227+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2018-05-11T18_24_02_360Z-debug.log
+2018-05-11T18:24:02.433852+00:00 heroku[web.1]: Process exited with status 1
+2018-05-11T18:24:02.546516+00:00 heroku[web.1]: State changed from starting to crashed
+2018-05-11T18:24:02.548887+00:00 heroku[web.1]: State changed from crashed to starting
+2018-05-11T18:24:05.777196+00:00 heroku[web.1]: Starting process with command `npm start`
+2018-05-11T18:24:09.051238+00:00 app[web.1]: 
+2018-05-11T18:24:09.051263+00:00 app[web.1]: > burger@1.0.0 start /app
+2018-05-11T18:24:09.051265+00:00 app[web.1]: > node server.js
+2018-05-11T18:24:09.051267+00:00 app[web.1]: 
+2018-05-11T18:24:09.625779+00:00 app[web.1]:   connection.mysql.createConnection(process.env.JAWSDB_URL);
+2018-05-11T18:24:09.625739+00:00 app[web.1]: /app/config/connection.js:11
+2018-05-11T18:24:09.625788+00:00 app[web.1]:     at Module._compile (module.js:652:30)
+2018-05-11T18:24:09.625784+00:00 app[web.1]: TypeError: Cannot read property 'mysql' of undefined
+2018-05-11T18:24:09.625782+00:00 app[web.1]:              ^
+2018-05-11T18:24:09.625786+00:00 app[web.1]:     at Object.<anonymous> (/app/config/connection.js:11:14)
+2018-05-11T18:24:09.625790+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:663:10)
+2018-05-11T18:24:09.625783+00:00 app[web.1]: 
+2018-05-11T18:24:09.635335+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2018-05-11T18:24:09.625799+00:00 app[web.1]:     at Object.<anonymous> (/app/config/orm.js:1:80)
+2018-05-11T18:24:09.625793+00:00 app[web.1]:     at tryModuleLoad (module.js:505:12)
+2018-05-11T18:24:09.625794+00:00 app[web.1]:     at Function.Module._load (module.js:497:3)
+2018-05-11T18:24:09.625796+00:00 app[web.1]:     at Module.require (module.js:596:17)
+2018-05-11T18:24:09.625800+00:00 app[web.1]:     at Module._compile (module.js:652:30)
+2018-05-11T18:24:09.625797+00:00 app[web.1]:     at require (internal/module.js:11:18)
+2018-05-11T18:24:09.635859+00:00 app[web.1]: npm ERR! errno 1
+2018-05-11T18:24:09.637509+00:00 app[web.1]: npm ERR! burger@1.0.0 start: `node server.js`
+2018-05-11T18:24:09.637744+00:00 app[web.1]: npm ERR! Exit status 1
+2018-05-11T18:24:09.638038+00:00 app[web.1]: npm ERR! 
+2018-05-11T18:24:09.638461+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2018-05-11T18:24:09.625791+00:00 app[web.1]:     at Module.load (module.js:565:32)
+2018-05-11T18:24:09.638254+00:00 app[web.1]: npm ERR! Failed at the burger@1.0.0 start script.
+2018-05-11T18:24:09.663134+00:00 app[web.1]: 
+2018-05-11T18:24:09.663684+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2018-05-11T18:24:09.663983+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2018-05-11T18_24_09_640Z-debug.log
+2018-05-11T18:24:09.752522+00:00 heroku[web.1]: Process exited with status 1
+2018-05-11T18:24:09.827424+00:00 heroku[web.1]: State changed from starting to crashed
+2018-05-11T18:30:12.021904+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=immense-sands-70222.herokuapp.com request_id=dfc42b51-8262-4eed-9222-df704975f74c fwd="173.75.219.189" dyno= connect= service= status=503 bytes= protocol=https
+2018-05-11T18:30:12.252355+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=immense-sands-70222.herokuapp.com request_id=421a67b6-08a6-44b8-8a7d-77f888b57cdf fwd="173.75.219.189" dyno= connect= service= status=503 bytes= protocol=https
+2018-05-11T18:30:59.000000+00:00 app[api]: Build started by user isaaclubanko@gmail.com
+2018-05-11T18:31:11.542982+00:00 heroku[web.1]: State changed from crashed to starting
+2018-05-11T18:31:13.499366+00:00 heroku[web.1]: Starting process with command `npm start`
+2018-05-11T18:31:15.606658+00:00 app[web.1]: 
+2018-05-11T18:31:15.606682+00:00 app[web.1]: > burger@1.0.0 start /app
+2018-05-11T18:31:15.606683+00:00 app[web.1]: > node server.js
+2018-05-11T18:31:15.606685+00:00 app[web.1]: 
+2018-05-11T18:31:15.880950+00:00 app[web.1]:   connection.mysql.createConnection(process.env.JAWSDB_URL);
+2018-05-11T18:31:15.880905+00:00 app[web.1]: /app/config/connection.js:11
+2018-05-11T18:31:15.880954+00:00 app[web.1]:              ^
+2018-05-11T18:31:15.880956+00:00 app[web.1]: 
+2018-05-11T18:31:15.880958+00:00 app[web.1]: TypeError: Cannot read property 'mysql' of undefined
+2018-05-11T18:31:15.880960+00:00 app[web.1]:     at Object.<anonymous> (/app/config/connection.js:11:14)
+2018-05-11T18:31:15.880963+00:00 app[web.1]:     at Module._compile (module.js:652:30)
+2018-05-11T18:31:15.880965+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:663:10)
+2018-05-11T18:31:15.880967+00:00 app[web.1]:     at Module.load (module.js:565:32)
+2018-05-11T18:31:15.880969+00:00 app[web.1]:     at tryModuleLoad (module.js:505:12)
+2018-05-11T18:31:15.880971+00:00 app[web.1]:     at Function.Module._load (module.js:497:3)
+2018-05-11T18:31:15.880973+00:00 app[web.1]:     at Module.require (module.js:596:17)
+2018-05-11T18:31:15.880975+00:00 app[web.1]:     at require (internal/module.js:11:18)
+2018-05-11T18:31:15.880977+00:00 app[web.1]:     at Object.<anonymous> (/app/config/orm.js:1:80)
+2018-05-11T18:31:15.880979+00:00 app[web.1]:     at Module._compile (module.js:652:30)
+2018-05-11T18:31:15.889427+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2018-05-11T18:31:15.889926+00:00 app[web.1]: npm ERR! errno 1
+2018-05-11T18:31:15.892820+00:00 app[web.1]: npm ERR! burger@1.0.0 start: `node server.js`
+2018-05-11T18:31:15.893168+00:00 app[web.1]: npm ERR! Exit status 1
+2018-05-11T18:31:15.893692+00:00 app[web.1]: npm ERR! 
+2018-05-11T18:31:15.893868+00:00 app[web.1]: npm ERR! Failed at the burger@1.0.0 start script.
+2018-05-11T18:31:15.894186+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2018-05-11T18:31:15.903264+00:00 app[web.1]: 
+2018-05-11T18:31:15.903456+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2018-05-11T18:31:15.903592+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2018-05-11T18_31_15_897Z-debug.log
+2018-05-11T18:31:10.949610+00:00 app[api]: Deploy d0850c11 by user isaaclubanko@gmail.com
+2018-05-11T18:31:15.954814+00:00 heroku[web.1]: Process exited with status 1
+2018-05-11T18:31:15.972020+00:00 heroku[web.1]: State changed from starting to crashed
+2018-05-11T18:30:59.000000+00:00 app[api]: Build succeeded
+2018-05-11T18:31:10.949610+00:00 app[api]: Release v6 created by user isaaclubanko@gmail.com
