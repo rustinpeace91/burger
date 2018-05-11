@@ -1,6 +1,37 @@
+body{
+    background:#ffe87a;
+    font-family:arial;
+    margin:10px;
+}
+
+
+button{
+    margin-top:5px;
+    margin-left:5px;
+    padding:5px;
+}
+
+.container {
+    margin:auto;
+    text-align:center;
+    width:100%;
+    padding:10px;
+}
+ul{
+    text-align:left;
+}
+
+.burger-block {
+    padding:0 20px;
+}
+
 #burger-container {
-    display: -webkit-flex; /* Safari */
-    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+
+    display: -webkit-flex; 
+    -webkit-flex-wrap: wrap; 
     display: flex;
     flex-wrap: wrap;
+    justify-content:center;
+
+
 }
