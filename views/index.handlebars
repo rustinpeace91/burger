@@ -1,28 +1,29 @@
 <h1>Eat Da Burger!</h1>
 
 <div id = "burger-container">
-  <div class = "burger block">
+  <div class = "burger-block">
   <h2>Burgers Not Eated</h2>
 
-      <ul>
+    <ul>
     {{#each burgers}}
       {{#unless devoured}}
-          <li>{{burger_name}}<button> Devour it</button></li>
+          <li>{{burger_name}}<button class = "devourit" data-id= {{id}}> Devour it</button></li>
       {{/unless}}
     {{/each}}
 
+    </ul>
+  </div>
+
+  <div class = "burger-block">
+      <h2>Burgers Eated</h2>
+      <ul>
+      {{#each burgers}}
+        {{#if devoured}}
+            <li>{{burger_name}} has been eaten</li>
+        {{/if}}
+      {{/each}}
       </ul>
   </div>
-  <div class = "burger-block">
-    <h2>Burgers Eated</h2>
-    <ul>
-    {{#each burgers}}
-      {{#if devoured}}
-          <li>{{burger_name}} has been eaten</li>
-      {{/if}}
-    {{/each}}
-    </ul>
-    </div>
 
 </div>
 
@@ -31,14 +32,9 @@
 
   <div class="form-group">
     <label for="burgeradd">burger name:</label>
-    <input type="text" id="ca" name="name">
+    <input type="text" id="ba" name="name">
   </div>
 
-  <div class="form-group">
-    <label for="isdev">Sleepy?</label><br>
-    <input type="radio" name="sleepy" value="1" checked> devoured<br>
-    <input type="radio" name="sleepy" value="0"> not devoured
-  </div>
 
-  <button type="submit">Add Burger</button>
+  <button class = "addburger" type="submit">Add Burger</button>
 </form>

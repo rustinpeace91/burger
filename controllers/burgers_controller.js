@@ -11,9 +11,27 @@ router.get("/", function(req, res){
         var hbsObject = {
             burgers: data
         };
-        console.log(hbsObject);
         res.render("index", hbsObject);
     });
 });
+
+router.post("/api/burgers", function(req,res){
+    console.log(req.body);
+    burger.insertOne(req.body.name, 0, function(result){
+        res.status(200).end();
+    })
+
+});
+
+router.put("/api/burgers/:id", function(req, res){
+
+    burger.updateOne(req.params.id, 1,  function(result){
+        res.json(result)
+
+    })
+})
+
+
+
 
 module.exports = router;
