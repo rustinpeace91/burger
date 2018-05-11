@@ -26,6 +26,15 @@ var orm = {
             func(result);
         })
 
+    },
+
+    deleteOne: function(table, id, func ){
+        var queryString = "DELETE FROM ??  WHERE id = ?;"
+        connection.query(queryString, [table,id], function(err, result){
+            if(err) throw err;
+            func(result);
+        })
+
     }
 
 

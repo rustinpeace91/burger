@@ -26,8 +26,15 @@ router.post("/api/burgers", function(req,res){
 router.put("/api/burgers/:id", function(req, res){
 
     burger.updateOne(req.params.id, 1,  function(result){
-        res.json(result)
+        res.json(result);
 
+    })
+})
+
+router.delete("/api/burgers/:id", function(req, res){
+    burger.deleteOne(req.params.id, function(result){
+        //res.status(200).end();
+        res.json(result);
     })
 })
 

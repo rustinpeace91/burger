@@ -1,4 +1,4 @@
-<h1>Eat Da Burger!</h1>
+<h1>EatABurger!</h1>
 
 <div id = "burger-container">
   <div class = "burger-block">
@@ -19,7 +19,7 @@
       <ul>
       {{#each burgers}}
         {{#if devoured}}
-            <li>{{burger_name}} has been eaten</li>
+            <li>{{burger_name}} has been eaten<button class = "deleteit" data-id= {{id}}>X</button></li>
         {{/if}}
       {{/each}}
       </ul>

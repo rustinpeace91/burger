@@ -20,6 +20,12 @@ var burger = {
         orm.updateOne("burgers", id, devoured, function(result){
             func(result);
         });
+    },
+
+    deleteOne: function(id, func){
+        orm.deleteOne("burgers", id, function(result){
+            func(result);
+        });
     }
 
 };
