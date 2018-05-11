@@ -4,6 +4,7 @@
   <div class = "burger-block">
   <h2>Burgers Not Eated</h2>
 
+<!--displays all the burgers not eaten-->
     <ul>
     {{#each burgers}}
       {{#unless devoured}}
@@ -16,6 +17,8 @@
 
   <div class = "burger-block">
       <h2>Burgers Eated</h2>
+  <!--displays all the burgers that have been eaten, also gives the option to delete the burgers-->
+
       <ul>
       {{#each burgers}}
         {{#if devoured}}
