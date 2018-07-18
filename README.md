@@ -13,3 +13,16 @@ Technologies used:
 -Express
 -MySQL
 -Handlebars
+
+## Link to Deployed app
+https://immense-sands-70222.herokuapp.com/
+
+## Instructions 
+
+1.Git Clone the project
+
+2.Run "npm install"
+
+3.In /config/connection.js, input your database credentials
+
+4.In root project directory run "node server.js" 
