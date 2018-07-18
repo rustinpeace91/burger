@@ -19,10 +19,12 @@ https://immense-sands-70222.herokuapp.com/
 
 ## Instructions 
 
-1.Git Clone the project
+1.Clone the project.
 
-2.Run "npm install"
+2.Run "npm install."
 
-3.In /config/connection.js, input your database credentials
+3.In /config/connection.js, from lines 14-18, input your database credentials.
 
-4.In root project directory run "node server.js" 
+4.in /db folder. run the "schema.sql" file in your local SQL database. If you would like some initial values, also run the "seeds.sql" file.
+
+5.In root project directory run "node server.js", the project runs on port 3000 by default. 
