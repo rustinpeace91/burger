@@ -17,7 +17,7 @@ Technologies used:
 ## Link to Deployed app
 https://immense-sands-70222.herokuapp.com/
 
-!(http://www.isaaclubanko.com/assets/images/burger.jpg)
+!["burger screenshot"](http://www.isaaclubanko.com/assets/images/burger.jpg)
 
 ## Instructions 
 
